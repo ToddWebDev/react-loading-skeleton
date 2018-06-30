@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Bone({message}) {
     return <div>Hello {message}</div>
