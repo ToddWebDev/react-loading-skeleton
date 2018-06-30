@@ -46,7 +46,11 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "node scripts/start.js",
+    "prestart": "npm run gen:docs",
+    "start": "npm-run-all --parallel start:docs gen:docs-watch",
+    "start:docs": "node scripts/start.js",
+    "gen:docs": "node scripts/generateComponentData.js",
+    "gen:docs-watch": "npm run gen:docs -- --watch",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
   },
