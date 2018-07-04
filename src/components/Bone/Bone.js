@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import { builtinModules } from 'module';
 
 class Bone extends React.Component {
-  getColor = () => 'lightgreen';
+  getColor = () => '#d1d2d4';
 
   render() {
     const {width, height} = this.props;
