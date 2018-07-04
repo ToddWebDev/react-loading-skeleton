@@ -8,11 +8,11 @@ class Bone extends React.Component {
   render() {
     const {width, height} = this.props;
     return (
-      <div style={{border: 'solid 1px lightgray', width: width}}>
+      <div>
         <div style={{
           borderRadius: '7px',
-          width: this.props.width,
-          height,
+          width: width,
+          height: height,
           backgroundColor: this.getColor()
         }} />
       </div>
