@@ -28,8 +28,8 @@ class Skull extends React.Component {
 }
 
 Skull.propTypes = {
-  /** Skull Shape */
-  shape: PropTypes.string,
+  /** Skull Shape  */
+  shape: PropTypes.oneOf(['round','square']),
 };
 
 Skull.defaultProps = {

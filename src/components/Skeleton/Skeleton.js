@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Bone from "../Bone";
 import Skull from "../Skull";
-import { get } from "https";
 
-/** The Skeleton is the core loading component that contains the bones */
+/** The Skeleton can be used to dynamically generate bones.  */
 class Skeleton extends Component {
   getAnimation = () => this.props.animate ? 'blink' : '';
 
@@ -22,11 +21,11 @@ class Skeleton extends Component {
 }
 
 Skeleton.propTypes = {
-  /** Skull */
+  /** Show Skull */
   skull: PropTypes.bool,
   /** Amount of Bones */
   amount: PropTypes.number,
-  /** Animate */
+  /** Fade bones in and out  */
   animate: PropTypes.bool
 };
 

@@ -27,8 +27,8 @@ table {
 /* Documentation site component styles */
 .example {
   border: solid 1px #d3d3d3;
-  padding: 16px;
-  margin-bottom: 16px;
+  padding: 15px;
+  margin: 0 15px 15px 0;
   background-color: #f4f6f9;
 }
 
@@ -51,13 +51,13 @@ table {
 
 .navigation {
   float: left;
-  width: 250px;
+  width: 200px;
   list-style-type: none;
   padding: 0;
 }
 
 .componentpage {
-  margin-left: 275px;
+  margin-left: 225px;
 }
 
 .blink {

@@ -23,9 +23,7 @@ class Example extends React.Component {
     return (
       <div className="example">
         {description && <h4>{description}</h4> }
-
         <ExampleComponent />
-
         <p>
           <a href="" onClick={this.toggleCode}>
             {showCode ? "Hide" : "Show"} Code

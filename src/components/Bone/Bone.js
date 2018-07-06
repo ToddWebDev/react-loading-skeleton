@@ -8,7 +8,7 @@ class Bone extends React.Component {
   render() {
     const {width, height} = this.props;
     return (
-      <div>
+      <div style={{marginTop: 0, marginBottom: 0}}>
         <div style={{
           borderRadius: '7px',
           width: width,
@@ -22,9 +22,9 @@ class Bone extends React.Component {
 
 Bone.propTypes = {
   /** Bone width by percentage */
-  width: PropTypes.number.isRequired,
+  width: PropTypes.number,
 
-  /** Bone height */
+  /** Bone height by pixels */
   height: PropTypes.number
 };
 
