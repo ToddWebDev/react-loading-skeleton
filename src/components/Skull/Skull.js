@@ -1,9 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { builtinModules } from 'module';
+
 
 class Skull extends React.Component {
-  getColor = () => '#d1d2d4';
   getShape = () => {
     if(this.props.shape === 'square'){
       return '4px';
@@ -20,7 +19,7 @@ class Skull extends React.Component {
           height: '100px',
           width: '100px',
           borderRadius: this.getShape(),
-          backgroundColor: this.getColor()
+          backgroundColor: '#d1d2d4'
         }} />
       </div>
     );
