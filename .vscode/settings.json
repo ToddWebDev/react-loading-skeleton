@@ -1,4 +1,8 @@
 {
     "editor.tabSize": 2,
-    "editor.detectIndentation": false
-}
+    "editor.detectIndentation": false,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorStyle": "line",
+    "editor.cursorWidth": 0,
+    "editor.renderWhitespace": "all"
+  }
