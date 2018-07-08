@@ -5,14 +5,13 @@ class Bone extends React.Component {
   render() {
     const {width, height} = this.props;
     return (
-      <div style={{marginTop: 0, marginBottom: 0}}>
-        <div style={{
-          borderRadius: '7px',
-          width: width+'%',
-          height: height,
-          backgroundColor: '#d1d2d4'
-        }} />
-      </div>
+       <div style={{
+        borderRadius: '7px',
+        width: width+'%',
+        height: height,
+        marginTop: 15,
+        backgroundColor: '#d1d2d4'
+        }} ></div>
     );
   }
 }

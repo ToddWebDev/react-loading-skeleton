@@ -14,14 +14,12 @@ class Skull extends React.Component {
 
   render() {
     return (
-      <div>
-        <div style={{
-          height: '100px',
-          width: '100px',
-          borderRadius: this.getShape(),
+       <div style={{
+        height: '100px',
+        width: '100px',
+        borderRadius: this.getShape(),
           backgroundColor: '#d1d2d4'
-        }} />
-      </div>
+        }}></div>
     );
   }
 }
