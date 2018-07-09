@@ -2,13 +2,17 @@
 
 Simple, animated loading placeholders that automatically adapt to the context of your app.
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
 ## Install
 ```
 npm install react-loading-skeleton
+```
+
+## Basic Usage
+```
+import { Skeleton } from 'react-loading-skeleton-placeholders';
+
+<Skeleton amount={5} />  //Simple, five line loading placeholder
+<Skeleton amount={3} skull={true} />  //Circle and 3 line loading placeholder
 ```
 
 ## Spin up Dev Env
@@ -18,9 +22,6 @@ Clone this repo, install dependencies and use `npm start` to run project.
 ## Docs
 [Component Documentation](http://toddwebdev.github.io/react-loading-skeleton/)
 
-## Built With
-
-* [create-react-app](https://github.com/facebook/create-react-app) - The boilerplate scaffolding
 
 ## Contributing
 
@@ -32,7 +33,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Todd Rizzolo** - *Initial work* - [GitHub](https://github.com/ToddWebDev)
+* **Todd WebDev** - *Initial work* - [GitHub](https://github.com/ToddWebDev)
 
 See also the list of [contributors](https://github.com/toddwebdev/react-loading-skeleton/contributors) who participated in this project.
 
