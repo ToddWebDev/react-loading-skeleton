@@ -1,4 +1,4 @@
-# react-loading-skeleton
+# ☠️ react-loading-skeleton ☠️
 
 Simple, animated loading placeholders that automatically adapt to the context of your app.
 
@@ -20,6 +20,7 @@ import { Skeleton } from 'react-loading-skeleton-placeholders';
 Clone this repo, install dependencies and use `npm start` to run project.
 
 ## Docs
+Dig into the dirt and get to know the Skeleton with the documentation. 
 [Component Documentation](http://toddwebdev.github.io/react-loading-skeleton/)
 
 
