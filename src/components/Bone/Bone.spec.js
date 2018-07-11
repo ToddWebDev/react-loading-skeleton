@@ -12,7 +12,7 @@ describe('Bone', () => {
   test('Bone renders default width of 100 and height of 10', () => {
     const wrapper = mount(<Bone />);
     expect(wrapper.props().width).toEqual(100);
-    expect(wrapper.props().height).toEqual(10);
+    expect(wrapper.props().height).toEqual(15);
   });
 
   test('Bone renders custom width', () => {

@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../index.css';
 
 class Bone extends React.Component {
   render() {
     const {width, height} = this.props;
     return (
        <div style={{
-        borderRadius: '7px',
+        borderRadius: '4px',
         width: width+'%',
         height: height,
         marginTop: 15,
-        backgroundColor: '#d1d2d4'
+        backgroundColor: 'rgba(0,0,0,0.1)'
         }} ></div>
     );
   }
@@ -26,7 +27,7 @@ Bone.propTypes = {
 
 Bone.defaultProps = {
   width: 100,
-  height: 10
+  height: 15
 };
 
 export default Bone;
