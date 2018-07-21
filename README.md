@@ -15,6 +15,21 @@ import { Skeleton } from 'react-loading-skeleton-placeholders';
 <Skeleton amount={3} skull={true} />  //Circle and 3 line loading placeholder
 ```
 
+##Principles
+The `<Bone />` component is designed to be used directly in your components, in place of content while it is loading.  Using a `<Bone />` will ensure the loading state remains up-to-date with any changes to your layout or typography. The `<Skeleton />` component is designed to be used as a generic placeholder for body text.
+```
+class Article extends Component {
+    render() {
+        return (
+            <div style={{fontSize: 20, lineHeight: 2}}>
+                <h1>{this.props.title || <Bone />}</h1>
+                {this.props.body || <Skeleton count={10}/>}
+            </div>
+        );
+    }
+}
+```
+
 ## Spin up Dev Env
 
 Clone this repo, install dependencies and use `npm start` to run project.
