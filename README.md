@@ -4,7 +4,7 @@ Simple, animated loading placeholders that automatically adapt to the context of
 
 ## Install
 ```
-npm install react-loading-skeleton
+npm install react-loading-skeleton-placeholders
 ```
 
 ## Basic Usage
