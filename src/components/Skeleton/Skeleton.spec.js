@@ -14,6 +14,7 @@ describe('Skeleton', () => {
     expect(wrapper.props().skull).toBeFalsy();
     expect(wrapper.props().animate).toBeTruthy();
     expect(wrapper.props().amount).toEqual(1);
+    expect(wrapper.props().direction).toEqual('column');
   });
 
   test('Skeleton renders with skull and bones', () => {
@@ -21,6 +22,15 @@ describe('Skeleton', () => {
     expect(wrapper.props().skull).toBeTruthy();
     expect(wrapper.props().animate).toBeTruthy();
     expect(wrapper.props().amount).toEqual(3);
+    expect(wrapper.props().direction).toEqual('column');
+  });
+
+  test('Skeleton renders with skull and bones in direction row', () => {
+    const wrapper = mount(<Skeleton skull={true} amount={3} direction={'row'} />);
+    expect(wrapper.props().skull).toBeTruthy();
+    expect(wrapper.props().animate).toBeTruthy();
+    expect(wrapper.props().amount).toEqual(3);
+    expect(wrapper.props().direction).toEqual('row');
   });
 
   test('Skeleton renders with no animation', () => {
@@ -28,6 +38,7 @@ describe('Skeleton', () => {
     expect(wrapper.props().skull).toBeFalsy();
     expect(wrapper.props().animate).toBeFalsy();
     expect(wrapper.props().amount).toEqual(1);
+    expect(wrapper.props().direction).toEqual('column');
   });
 
 });
