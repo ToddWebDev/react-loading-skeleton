@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 import Bone from "../Bone";
 import Skull from "../Skull";
@@ -22,6 +23,13 @@ class Skeleton extends Component {
   getAnimation = () => this.props.animate ? 'blink' : '';
 
   render() {
+    const Bones = styled.div`
+      > div {
+        &:nth-child(n+${this.props.amount > 1 ? this.props.amount : null}) {
+          width: 75% !important;
+        }
+      }
+    `;
     const { skull, amount, direction } = this.props;
     const skeleton = [];
     const bones = [];
@@ -34,7 +42,7 @@ class Skeleton extends Component {
     return (
       <div className={this.getAnimation()} style={direction === 'row' ? skeletonFlexRowStyle : null} >
         <div>{skeleton}</div>
-        <div style={direction === 'row' ? boneFlexRowStyle : null}>{bones}</div>
+        <Bones style={direction === 'row' ? boneFlexRowStyle : null}>{bones}</Bones>
       </div>
     );
   }
