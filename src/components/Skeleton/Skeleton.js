@@ -25,6 +25,9 @@ class Skeleton extends Component {
   render() {
     const Bones = styled.div`
       > div {
+        &:first-child {
+          height: ${this.props.bigBone ? 30 : 15}px !important;
+        }
         &:nth-child(n+${this.props.amount > 1 ? this.props.amount : null}) {
           width: 75% !important;
         }
@@ -53,7 +56,9 @@ Skeleton.propTypes = {
   skull: PropTypes.bool,
   /** Amount of Bones */
   amount: PropTypes.number,
-  /** Fade bones in and out  */
+  /** With Big Bone header */
+  bigBone: PropTypes.bool,
+  /** Fade Bones in and out  */
   animate: PropTypes.bool,
   /** Column or Row   */
   direction: PropTypes.oneOf(['column','row'])
@@ -62,6 +67,7 @@ Skeleton.propTypes = {
 Skeleton.defaultProps = {
   skull: false,
   amount: 1,
+  bigBone: false,
   animate: true,
   direction: 'column'
 };
